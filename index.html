@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="stylesheet" href="src/css/style.css" type="text/css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="text-one"> 
+                    <span class="title">Você visitou:</span>
+                </div>
+                <div class="text-two">
+                    <span class="title">e talvez se interesse por:</span>
+                </div>
+            </div>
+            <div class="products">
+                <section id="reference" class="reference"></section>
+                <section class="recommendations">
+                    <div class="products-back-btn" onClick="back()" onmouseover="b = setInterval(back,100)" onmouseout="clearInterval(b)">
+                        <div id="back-btn"></div>
+                    </div>
+                    <div class="box-recommendations">
+                        <ul id="list-recommendations" class="list-recommendations"></ul>
+                    </div>
+                    <div class="products-next-btn" onClick="next()" onmouseover="n = setInterval(next,100)" onmouseout="clearInterval(n)">
+                        <div id="next-btn"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script src="src/js/app.js"></script>
+    </body>
+</html>
+
